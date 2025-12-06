@@ -1,0 +1,32 @@
+<!DOCtype html>
+<html lang="eng">
+    <head>
+        <title>Guess the Number</title>
+     <!---<link rel="stylesheet" href="style.css">--->
+    </head>
+    <body>
+        <div class="canvas">
+            <h1>Guess the Number!</h1>
+            <p>We have selected a random number between 1 and 100. See if you can guess it in 5 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+            <form class="form">
+                <label for="guessField">Enter your guess: </label>
+                <br>
+                <input type="text" id="guessField" class="guessField">
+                <br>
+                <br>
+                <input type="submit" value="Submit guess" class="guessSubmit">
+                <br>
+                <br>
+                <button id="restart" >Restart Game</button>
+
+                 <span id="msg"></span>
+            </form>
+            <div class="resultParas">
+                <p class="guesses"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
