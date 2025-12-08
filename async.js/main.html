@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASYNC IN JS</title>
+    </head>
+    <body style="background: #aca4a4;">
+   <h1 id="h1">This is javascript</h1>
+   <button id="start">start</button>
+   <button id="stop">stop</button>
+ <script>
+    //interval in js = run for a particular interval
+    let st;
+    const start=function(){
+        st= setInterval(function(){
+            console.log("akshita , this is me ");
+        },2000);
+    }
+
+   document.querySelector("#start").addEventListener("click",start);
+
+   const stop=function(){
+     clearInterval(st);
+     console.log("Stopped!!")
+   }
+   document.querySelector("#stop").addEventListener("click",stop);
+     
+     
+ 
+    
+  
+</script>
+    </body>
+   
+
+</html>

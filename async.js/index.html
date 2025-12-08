@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASYNC IN JS</title>
+    </head>
+    <body style="background: #763f3f;">
+   <h1 id="h1">This is javascript</h1>
+   <buttton id="stop">stop</buttton>
+   <script>
+    const change=function(){
+        document.querySelector('h1').innerHTML="This is java";
+        console.log("changed");
+    }
+
+    const set=setTimeout(change,2000);
+
+     
+        document.querySelector("#stop").addEventListener('dblclick',function(){
+            console.log("Stopped!!");
+             //for stoping the timeout
+             clearTimeout(set);
+        });
+    
+  
+   
+
+
+   </script>
+    </body>
+   
+
+</html>
